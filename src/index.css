@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+
+/* 2. Place your font files inside the public/fonts/folder */
+@font-face {
+  font-family: 'Nexa Trial';
+  src: url('./assets/fonts/nexa/NexaText-Trial-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa Trial';
+  src: url('./assets/fonts/nexa/NexaText-Trial-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/montserrat/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/montserrat/Montserrat-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* 3. Set Custom Theme Tokens */
+@theme {
+  --color-brand-dark: #070707;
+  --color-brand-gold: #c6ac8f;
+
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-nexa: 'Nexa Trial', sans-serif;
+}
+
+/* 4. Global Core Styling */
+html {
+  scroll-behavior: smooth;
+  background-color: #070707;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #070707;
+  color: #c6ac8f;
+  margin: 0;
+  padding: 0;
+}
+
+/* Luxury Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070707;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(198, 172, 143, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c6ac8f;
+}
+
+/* BAD DECISION STUDIO INSPIRED CINEMATIC TEXT ANIMATIONS */
+@keyframes cinematic-text-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(1.03);
+    filter: blur(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* First line text reveal delay */
+.animate-hero-fade-1 {
+  opacity: 0;
+  animation: cinematic-text-up 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.3s;
+}
+
+/* Second line text reveal delay (Staggered Effect) */
+.animate-hero-fade-2 {
+  opacity: 0;
+  animation: cinematic-text-up 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.8s;
+}
