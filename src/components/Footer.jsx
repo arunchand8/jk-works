@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="w-full bg-brand-dark border-t border-brand-gold/5 py-24 px-6 md:px-12 lg:px-24"
+      className="w-full bg-brand-dark border-t border-brand-gold/5 pt-20 pb-3 px-6 md:px-1 lg:px-2"
     >
-      <div className="max-w-7xl mx-auto w-full flex flex-col items-center justify-center text-center">
+      <div className="border max-w-7xl mx-auto w-full flex flex-col items-center justify-center text-center">
         {/* Main Cinematic Heading */}
         <h2 className="font-nexa font-bold text-3xl md:text-4xl text-brand-gold tracking-wide max-w-2xl leading-tight mb-10">
           Let’s Create

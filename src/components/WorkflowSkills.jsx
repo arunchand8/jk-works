@@ -322,7 +322,8 @@ const WorkflowSkills = () => {
   return (
     <section
       id="workflow"
-      className="w-full bg-brand-dark flex flex-col items-center justify-center overflow-hidden py-16 md:py-24 lg:py-28 relative"
+      // className="border w-full bg-brand-dark flex flex-col items-center justify-center overflow-hidden py-16 md:py-24 lg:py-1 relative"
+      className="border w-full bg-brand-dark flex flex-col items-center justify-center overflow-hidden py-26 md:py-6 lg:py-23 relative"
     >
       {/* ADVANCED SCROLL-KICKED KEYFRAMES */}
       <style>{`

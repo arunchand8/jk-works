@@ -120,11 +120,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full bg-brand-dark py-24 md:py-32 lg:py-40 px-6 md:px-12 lg:px-16 border-b border-brand-gold/5"
+      className="w-full bg-brand-dark py-23 md:py-26 lg:py-23 px-2 md:px-2 lg:px-2 border-b border-brand-gold/5"
     >
-      <div className="max-w-[90rem] mx-auto w-full text-left">
+      <div className="border max-w-[100rem] mx-auto w-full text-left">
         {/* Top Headers */}
-        <h2 className="font-nexa font-bold text-3xl md:text-4xl text-brand-gold tracking-wide mb-16">
+        <h2 className="font-nexa font-bold text-3xl md:text-4xl text-brand-gold tracking-wide mb-13">
           Projects
         </h2>
 

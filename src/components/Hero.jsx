@@ -98,7 +98,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-[75vh] md:h-[80vh] w-full flex items-center overflow-hidden"
+      className="relative h-[75vh] md:h-[100vh] w-full flex items-center overflow-hidden"
     >
       {/* 1. FULL WIDTH BACKGROUND IMAGE WITH DARK OVERLAY */}
       <div className="absolute inset-0 z-0">
