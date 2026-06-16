@@ -375,10 +375,10 @@ const WorkflowSkills = () => {
         }`}
       >
         <div className="absolute text-center z-30 pointer-events-none select-none">
-          <span className="font-nexa font-thin text-xs tracking-[0.4em] text-brand-gold/50 block mb-1 uppercase">
+          <span className="font-montserrat font-bold text-xs tracking-[0.4em] text-white block mb-1 uppercase">
             My
           </span>
-          <h2 className="font-nexa font-bold text-3xl md:text-4xl text-white tracking-widest uppercase">
+          <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-white tracking-widest uppercase">
             Workflow
           </h2>
           <p className="font-montserrat font-thin text-[10px] md:text-[13px] text-brand-gold tracking-wider mt-2">
