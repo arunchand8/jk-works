@@ -82,7 +82,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="border relative w-full flex items-center bg-brand-dark overflow-hidden py-24 md:py-26 lg:py-48"
+      className="relative w-full flex items-center bg-brand-dark overflow-hidden py-24 md:py-26 lg:py-48"
     >
       {/* 1. DESKTOP VIEW: CINEMATIC RIGHT-ALIGNED IMAGE */}
       <div className="absolute inset-y-0 right-0 w-full md:w-1/2 lg:w-3/6 xl:w-3/7 z-0 hidden md:block">
