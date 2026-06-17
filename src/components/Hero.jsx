@@ -173,13 +173,13 @@ const Hero = () => {
       <div className="relative z-20 max-w-7xl mx-auto w-full px-6 md:px-12 text-center select-none pointer-events-none">
         
         {/* First Line: Sleek, thin, and elegant sizing */}
-        <h1 className="font-nexa font-thin text-lg md:text-xl lg:text-2xl text-brand-gold tracking-[0.2em] mb-4 animate-hero-fade-1">
+        <h1 className="font-nexa font-thin text-lg md:text-xl lg:text-3xl text-brand-gold leading-tight tracking-[0.13em] mb-4 animate-hero-fade-1">
           Hi I’m{" "}
           <span className="text-brand-gold font-thin">K. Jayakrishna</span>
         </h1>
 
         {/* Second Line: Re-balanced cinematic bold size */}
-        <h2 className="font-nexa font-bold text-2xl md:text-4xl lg:text-5xl tracking-widest text-brand-gold leading-tight uppercase animate-hero-fade-2">
+        <h2 className="font-nexa font-bold text-2xl md:text-4xl lg:text-4xl tracking-wider text-brand-gold leading-tight uppercase animate-hero-fade-2">
           UNREAL ENGINE CINEMATIC ARTIST
         </h2>
         
