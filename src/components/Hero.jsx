@@ -191,7 +191,7 @@ const Hero = () => {
       */}
       <div
         onClick={handleScrollDown}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 animate-bounce cursor-pointer p-2 group transition-all duration-300"
+        className="absolute bottom-16 left-1/2 -translate-x-1/2 z-30 animate-bounce cursor-pointer p-2 group transition-all duration-300"
       >
         <svg
           className="w-6 h-6 md:w-7 md:h-7 text-brand-gold/50 group-hover:text-brand-gold transition-colors duration-300 ease-out"
