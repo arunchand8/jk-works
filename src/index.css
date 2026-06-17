@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-/* 2. Place your font files inside the public/fonts/folder */
 @font-face {
   font-family: 'Nexa Trial';
   src: url('./assets/fonts/nexa/NexaText-Trial-Thin.otf') format('opentype');
@@ -44,7 +42,7 @@
   font-style: normal;
 }
 
-/* 3. Set Custom Theme Tokens */
+/* Set Custom Theme Tokens */
 @theme {
   --color-brand-dark: #070707;
   --color-brand-gold: #c6ac8f;
@@ -53,7 +51,7 @@
   --font-nexa: 'Nexa Trial', sans-serif;
 }
 
-/* 4. Global Core Styling */
+/* Global Core Styling */
 html {
   scroll-behavior: smooth;
   background-color: #070707;
@@ -112,4 +110,47 @@ body {
   opacity: 0;
   animation: cinematic-text-up 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   animation-delay: 0.8s;
+}
+
+/* Workflow Orbit Animations */
+@keyframes split-divide {
+  0% { transform: translate(0px, 0px) scale(0.1); opacity: 0; }
+  100% { transform: translate(var(--mx), var(--my)) scale(1); opacity: 1; }
+}
+
+@keyframes orbit-clockwise {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes node-counter-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.divide-execution-layer { 
+  opacity: 0; 
+}
+
+.active-orbit .master-orbit-track { 
+  animation: orbit-clockwise 25s linear infinite; 
+  animation-delay: 2s; 
+}
+
+.active-orbit .child-node-fix { 
+  animation: node-counter-rotate 25s linear infinite; 
+  animation-delay: 2s; 
+}
+
+.active-orbit .divide-execution-layer {
+  --mx: var(--base-x);
+  --my: var(--base-y);
+  animation: split-divide 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (min-width: 1024px) {
+  .active-orbit .divide-execution-layer {
+    --mx: calc(var(--base-x) * 1.25);
+    --my: calc(var(--base-y) * 1.25);
+  }
 }

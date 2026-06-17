@@ -9,7 +9,6 @@ const Footer = () => {
       className="w-full bg-brand-dark border-t border-brand-gold/5 pt-20 pb-10 px-6 md:px-12 lg:px-24"
     >
       <div className="max-w-7xl mx-auto w-full flex flex-col items-center justify-center text-center">
-        {/* Main Cinematic Heading */}
         <h2 className="font-nexa font-bold text-3xl md:text-4xl text-brand-gold tracking-wide max-w-2xl leading-tight mb-10">
           Let’s Create
         </h2>
@@ -34,19 +33,13 @@ const Footer = () => {
           <span className="tracking-[0.15em] uppercase">Send Me</span>
         </a>
 
-        {/* --- BOTTOM SPLIT ROW CONTAINER ---
-          sm:flex-row మరియు justify-between ద్వారా టెక్స్ట్ ఎడమపక్కకి, ఐకాన్స్ కుడిపక్కకి విడిపోతాయి
-        */}
-        <div className="w-full border-t border-brand-gold/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-y-6 gap-x-4 text-brand-gold font-montserrat font-light text-[10px] md:text-[11px] tracking-widest">
-          
-          {/* LEFT SIDE: Copyright Text */}
+        {/* BOTTOM SPLIT ROW CONTAINER */}
+        <div className="w-full border-t border-brand-gold/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-y-6 gap-x-4 text-brand-gold font-montserrat font-light text-[10px] md:text-[11px] tracking-widest">          
           <p className="order-2 sm:order-1 text-center sm:text-left text-brand-gold/70">
             © {currentYear} K. Jayakrishna. All Rights Reserved.
           </p>
 
-          {/* RIGHT SIDE: Luxury Social Media Icons */}
           <div className="flex items-center justify-center gap-6 order-1 sm:order-2">
-            {/* LINKEDIN */}
             <a
               href="https://www.linkedin.com/in/imjayakrishna"
               target="_blank"
@@ -58,8 +51,6 @@ const Footer = () => {
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
               </svg>
             </a>
-
-            {/* YOUTUBE */}
             <a
               href="https://www.youtube.com/@im_jayakrishna"
               target="_blank"
@@ -71,8 +62,6 @@ const Footer = () => {
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg>
             </a>
-
-            {/* INSTAGRAM */}
             <a
               href="https://www.instagram.com/im_jayakrishna/"
               target="_blank"
@@ -85,7 +74,6 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-
         </div>
       </div>
     </footer>
