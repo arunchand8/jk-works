@@ -120,7 +120,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full bg-brand-dark py-23 md:py-26 lg:py-23 px-2 md:px-2 lg:px-2 border-b border-brand-gold/5"
+      className="w-full bg-brand-dark py-23 md:py-26 lg:py-34 lg:mb-16 px-2 md:px-2 lg:px-2 border-b border-brand-gold/5"
     >
       <div className="border max-w-[100rem] mx-auto w-full text-left">
         {/* Top Headers */}
